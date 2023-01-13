@@ -12,21 +12,32 @@
   </head>
   <body>
     <header>
-      <div class="header container flex">
+      <div class="header container flex header-search">
         <div class="title">Psycho<span>Art</span></div>
-        <input     type="search"
-          class="search"
-          cols="200"
+        <div class="search">
+          <label for="search">
+            <img src="./imgs/search.svg" alt="">
+          </label>
+          <input  id="search"   type="search" 
           placeholder="Search Collections & Items"
-        />
-        <nav>
+          />
+        </div>
+        <nav class="nav">
           <ul class="flex nav">
             <li><div class="nav-elem">Collections</div></li>
             <li><div class="nav-elem">Feature</div></li>
             <li><div class="nav-elem">FAQ</div></li>
-            <li><div class="nav-elem btn btn-purple">Select Wallet</div></li>
+            <li><button class="nav-elem btn btn-purple">Select Wallet</button></li>
           </ul>
         </nav>
+        <button class="nav-btns all">
+          <div class="nav-btn-menu">
+            <img src="./imgs/Vector.svg" alt="">
+          </div>
+          <div class="nav-btn-close">
+            <img src="./imgs/close-outline.svg" alt="">
+          </div>
+        </button>
       </div>
       <div class="hero container">
         <div class="hero-text">
